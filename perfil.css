@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+}
+
+p,h2{
+    text-align: center;
+}
+
+header h2{
+    font-size: 200%;
+}
+
+section ul{
+    list-style: none;
+    background-color:gray;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+li{
+    margin-bottom: 50px;
+}
+
+li:hover{
+    background-color: darkgray;
+}

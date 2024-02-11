@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Libre+Baskerville&family=Lobster&display=swap');
+
+@media only screen and (max-width: 600px) {
+
+    .logo{
+        display: none;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .corpo-mobile{
+        display: flex;
+    }
+    
+    .corpo-desktop{
+        display: none;
+    }
+
+    .livros-mobile{
+        display: block;
+    }
+    
+    .livros-desktop{
+        display: none;
+    }
+
+    .uni-desktop{
+        display: none;
+    }
+    
+    .uni-mobile{
+        display: grid;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .corpo-mobile{
+        display: flex;
+    }
+    
+    .corpo-desktop{
+        display: none;
+    }
+
+    .livros-mobile{
+        display: block;
+    }
+    
+    .livros-desktop{
+        display: none;
+    }
+
+    .uni-desktop{
+        display: none;
+    }
+    
+    .uni-mobile{
+        display: grid;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .corpo-mobile{
+        display: flex;
+    }
+    
+    .corpo-desktop{
+        display: none;
+    }
+
+    .livros-mobile{
+        display: block;
+    }
+    
+    .livros-desktop{
+        display: none;
+    }
+
+    .uni-desktop{
+        display: none;
+    }
+    
+    .uni-mobile{
+        display: grid;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .corpo-mobile .barra-dark-grey{
+        display: none;
+    }
+    
+    .corpo-desktop{
+        display: flex;
+    }
+
+    .livros-mobile{
+        display: none;
+    }
+    
+    .livros-desktop{
+        display: block;
+    }
+
+    .uni-desktop{
+        display: grid;
+    }
+    
+    .uni-mobile{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .logo{
+        display: none;
+    }
+
+    .menu-desktop{
+        display: flex;
+    }
+
+    .ico-menu{
+        display: none;
+    }
+
+    .barra-dark-grey{
+        display: none;
+    }
+
+    .divisor{
+        display: none;
+    }
+
+    .divisor2{
+        display: none;
+    }
+
+    .corpo-mobile{
+        display: none;
+    }
+    
+    .corpo-desktop{
+        display: flex;
+    }
+
+    .livros-mobile{
+        display: none;
+    }
+    
+    .livros-desktop{
+        display: block;
+    }
+
+    .uni-desktop{
+        display: grid;
+    }
+    
+    .uni-mobile{
+        display: none;
+    }
+
+
+}
+
+@keyframes vir{
+
+    0%{
+        margin-left: -100%;
+    }
+
+    100%{     
+        margin-left: 0%;
+    }
+}
+
+@keyframes btn{
+    0%{
+        
+    }
+
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes btn1{
+    0%{
+        
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+    transition: all .60s;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------MENU Desktop--------------------------------------*/
+
+.slog{
+    position:absolute; 
+    left: 25%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    display: auto;
+}
+
+.slog p{
+    text-align: center;
+}
+
+.slog h2{
+    text-align:center; 
+    display:auto; 
+    font-size:auto; 
+    line-break: auto;
+}
+
+.slog img{
+    width: 18%;
+}
+
+.ft1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sub-matricula{
+    display:none;
+}
+
+.matricula:hover + .sub-matricula{
+    display: flex;
+}
+
+.sub-matricula:hover{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo{
+    position:absolute;
+    left: 40%;
+    top: 3%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-desktop{
+    flex: auto;
+    z-index: 999;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 50px;
+    box-shadow: 1px 1px 5px gray;
+    padding-right: 20%;
+    align-items: center;
+}
+
+.submenu-desktop{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.listas-desktop{
+    margin-left: 35px;
+    display: flex;
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37); 
+    color: white; 
+    padding:10px; width:auto; 
+    border:1px solid black;
+    animation: btn 1s alternate infinite;
+}
+
+.btn:hover{
+    background-color: rgb(61, 60, 60);
+    animation: none;
+}
+
+.btn1{
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37); 
+    color: white; 
+    padding:5px; 
+    width:120px; 
+    border:1px solid black;
+    animation: btn1 1s alternate infinite;
+}
+
+.btn1:hover{
+    background-color: rgb(61, 60, 60);
+    animation: none;
+}
+
+
+.links-desktop{
+    font-size: 21px;
+    text-decoration: none;
+    color: grey;
+}
+
+.links-desktop:hover{
+    color: white;
+}
+
+.links-desktop:active{
+    color: rgb(74, 73, 73);
+}
+
+.logo01-desktop{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/*--------------------------------------MENU Mobile--------------------------------------*/
+
+hr{
+    color: black;
+    font-size: 20px;
+}
+
+.barra-dark-grey{
+    background-position: center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    z-index: -12;
+
+}
+
+
+.ico-menu{
+    margin-left: 2px;
+    background-color: transparent;
+    margin-bottom: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.ico-menu:hover + .menu-mobile{
+    display: block;
+}
+
+.menu-mobile:hover{
+    display: block;
+}
+
+.menu-mobile{
+    z-index: 999;
+    color: grey;
+    animation: vir 1s linear alternate;
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+    display: none;
+    margin-top: 0;
+    margin-left: 0;
+    width: 50%;
+    height: 100%;
+    padding-bottom: 200%;
+    box-shadow: 1px 1px 5px black;
+
+}
+
+.submenu-mobile{
+    z-index: 999;
+    list-style: none;
+}
+
+.listas-mobile{
+    border-bottom: 1px solid gray;
+    padding: 2px;
+}
+
+.links-mobile{
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+}
+
+.links-mobile:hover{
+    color: white;
+}
+
+.links-mobile:active{
+    color: rgb(74, 73, 73);
+}
+
+.logo01-mobile{
+    font-size: 30px;
+    z-index: 999;
+}
+
+/*--------------------------------------CORPO--------------------------------------*/
+
+.iuni{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.corpohome{
+    position: relative;
+}
+
+.imgg{
+    width: 100%;
+    height: 50%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 232, 232);
+    justify-content: space-around;
+    border: 5px solid rgb(37, 37, 37);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container div{
+    position: relative;
+    display: flex;
+    width: 550px;
+    height: 300px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.img-quadro{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nome-aluno1{
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+}
+
+.nome-aluno2{
+    color: black;
+    position: absolute;
+    bottom: 0;
+    right:12%;
+}
+
+.info-quadro{
+    color: black;
+    position: absolute;
+    top: 0%;
+    transform: translate(-50% -50%);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    grid-auto-rows: auto;
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    grid-auto-rows: auto;
+}
+
+.grid-container-uni{
+    display: grid;
+    position: relative;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    grid-auto-rows: auto;
+}
+
+.grid-container-uni2{
+    display: grid;
+    position: relative;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    grid-auto-rows: auto;
+}
+
+.grid-item{
+    position: relative;
+    background-color: #790c0c;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    height: 400px;
+}
+
+.grid-item:hover{
+    box-shadow: #000000 0px 20px 30px -10px;
+}
+
+summary{
+    text-align: center;
+    font-size: 40px;
+}
+
+.ci1{
+    background-image: url("capa_dos_livros/128922.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ci2{
+    background-image: url("capa_dos_livros/bg1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.ci3{
+    background-image: url("capa_dos_livros/CAPAS_PRESENTE_CIENCIAS\ 3_CA\ LA-1\ CAPA\ 460x580px.jpg");
+    background-size: cover;
+}
+
+.ci4{
+    background-image: url("capa_dos_livros/d3c64a30234bd75bcdf7e11d9c925d89.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ci5{
+    background-image: url("capa_dos_livros/dd92a1a9a743482d4ae3865f31defa07.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ci6{
+    background-image: url("capa_dos_livros/Imagem.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ci7{
+    background-image: url("capa_dos_livros/VV_3A_CIENCIAS-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ci8{
+    background-image: url("capa_dos_livros/ograndelivrodeciencias_capaWEB.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.fi1{
+    background-image: url("capa_dos_livros/capa-f.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.fi2{
+    background-image: url("capa_dos_livros/80e295a17711154f4a7ce9dd6dd67c7a.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.fi3{
+    background-image: url("capa_dos_livros/images (1).png");
+    background-size: cover;
+    background-position: center;
+}
+
+.fi4{
+    background-image: url("capa_dos_livros/images (2).png");
+    background-size: cover;
+    background-position: center;
+}
+
+.fi5{
+    background-image: url("capa_dos_livros/images (3).png");
+    background-size: cover;
+    background-position: center;
+}
+
+.fi6{
+    background-image: url("capa_dos_livros/images.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.fi7{
+    background-image: url("capa_dos_livros/o-livro-rainha-charlotte-04092023150049980.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.fi8{
+    background-image: url("capa_dos_livros/transferir.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.an1{
+    background-image: url("capa_dos_livros/big.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.an2{
+    background-image: url("capa_dos_livros/girassol-contos-classico-pinoquio-pr-5812-gs16462_m1_637831255131606461.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.an3{
+    background-image: url("capa_dos_livros/images (5).png");
+    background-size: cover;
+    background-position: center;
+}
+
+.an4{
+    background-image: url("capa_dos_livros/images (6).png");
+    background-size: cover;
+    background-position: center;
+}
+
+.an5{
+    background-image: url("capa_dos_livros/images (7).png");
+    background-size: cover;
+    background-position: center;
+}
+
+.an6{
+    background-image: url("capa_dos_livros/images (8).png");
+    background-size: cover;
+    background-position: center;
+}
+
+.an7{
+    background-image: url("capa_dos_livros/images.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.an8{
+    background-image: url("capa_dos_livros/images (9).jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ro1{
+    background-image: url("capa_dos_livros/ate_breve.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ro2{
+    background-image: url("capa_dos_livros/como_nao_te_amar.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ro3{
+    background-image: url("capa_dos_livros/fique_ao_meu_lado.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ro4{
+    background-image: url("capa_dos_livros/meu_melhor_amigo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ro5{
+    background-image: url("capa_dos_livros/p.p.eu_te_amo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ro6{
+    background-image: url("capa_dos_livros/traiçoeiro.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ro7{
+    background-image: url("capa_dos_livros/um_dia.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ro8{
+    background-image: url("capa_dos_livros/ventos_do_amor.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.re1{
+    background-image: url("capa_dos_livros/A_casa_das_jovens_viúvas.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.re2{
+    background-image: url("capa_dos_livros/Comprados_com_sangue.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.re3{
+    background-image: url("capa_dos_livros/A_tradicacao_do_budismo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.re4{
+    background-image: url("capa_dos_livros/hinduismo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.re5{
+    background-image: url("capa_dos_livros/Torah.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.re6{
+    background-image: url("capa_dos_livros/Quem_e_o_estado_islamico.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.re7{
+    background-image: url("capa_dos_livros/cristaos_em_busca_do_extase.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.re8{
+    background-image: url("capa_dos_livros/budismo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-ler{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-shadow: black 2px 2px 1px;
+}
+
+.btn-ler:hover{
+    background-color: darkgoldenrod;
+    color: whitesmoke;
+}
+
+
+
+/*--------------------------------------RODAPÉ--------------------------------------*/
+
+.cadastrar:hover{
+    background-color: rgb(73, 73, 73);
+}
+
+.redes-socias:hover{
+    transform: scale(1.3);
+}
+
+/*FOOTER*/
+
+.redes-socias:hover{
+    transform: scale(1.3);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(37, 37, 37);
+    padding: 50px 0;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    margin-top:10%;
+    margin-bottom: 0;
+}
+
+footer ul{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer ul li{
+    margin-right: 3px;
+}
+
+footer ul li:last-child{
+    margin-right: 0;
+}
+
+footer ul li a{
+    color: white;
+    font-size: 2.1rem;
+}
+
+footer ul li a:hover{
+    color: #000000;
+}
+
+
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
